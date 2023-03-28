@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Abner's Calculator</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <form>
+        <div>
+            <section id="print_section">
+                <label for="print_input">Impressões: </label>
+                <select id="print_select_id">
+                    <option value="print_select_option1" selected>A4 Preto e Branco</opttion>
+                    <option value="print_select_option2">A4 Colorido</option>
+                    <option value="print_select_option3">A3 Preto e Branco</opttion>
+                    <option value="print_select_option4">A3 Colorido</option>
+                </select>
+                <input type="number" min="0" step="1" id="print_input">
+                <br>
+                <br>
+                <span>Unitário: R$<span id="unity_print_span">0</span></span>
+                <br>
+                <span>Total: R$<span id="total_print_span">0</span></span>
+            </section>
+            <br>
+            <section id="copy_section">
+                <label for="copy_input">Cópias: </label>
+                <select id="copy_select_id">
+                    <option value="copy_select_option1" selected>A4 Preto e Branco</opttion>
+                    <option value="copy_select_option2">A4 Colorido</option>
+                </select>
+                <input type="number" min="0" step="1" id="copy_input">
+                <br>
+                <br>
+                <span>Unitário: R$<span id="unity_copy_span">0</span></span>
+                <br>
+                <span>Total: R$<span id="total_copy_span">0</span></span>
+            </section>
+            <br>
+            <section id="bind_section">    
+                <label for="bind_0">Encadernação ( 07 mm ) P </label>
+                <input type="number" name="bind_input_0" value="0"  id="bind_0"></input><br><br>
+                
+                <label for="bind_1">Encadernação ( 09 mm ) PP </label>
+                <input type="number" name="bind_input_1" value="0"  id="bind_1"></input><br><br>
+                
+                <label for="bind_2">Encadernação ( 12 mm ) M </label>
+                <input type="number" name="bind_input_2" value="0"  id="bind_2"></input><br><br>
+                
+                <label for="bind_3">Encadernação ( 17 mm ) G </label>
+                <input type="number" name="bind_input_3" value="0"  id="bind_3"></input><br><br>
+                
+                <label for="bind_4">Encadernação ( 25 mm ) GG </label>
+                <input type="number" name="bind_input_4" value="0"  id="bind_4"></input><br><br>
+                
+                <label for="bind_5">Encadernação ( 50 mm ) X </label>
+                <input type="number" name="bind_input_5" value="0"  id="bind_5"></input><br><br>
+            </section>
+            <br>
+            <br>
+            <section id="total_value_section">
+                <span>Total: R$<span id="total_value_span">0</span></span><br>
+                <input type="button" value="Somar" id="calc_sum_button" onclick="calculator_function()">
+
+                <label for=""></label>
+                <input type="button" value="Resetar" id="reload_button" onclick="reload_function()">
+            </section>
+        </div>
+    </form>
+    <script src="calculator.js"></script>
+</body>
+</html>
