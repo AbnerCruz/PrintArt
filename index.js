@@ -17,4 +17,7 @@ app.listen(PORT,()=>{
 app.use(express.static("./main/public"))
 
 //Routes
-app.use("/",router)
+app.get("/",(req,res),()=>{
+    res.send("HelloWorld")
+})
+app.use("/admin",router)
